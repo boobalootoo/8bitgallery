@@ -26,7 +26,7 @@
 
         images.forEach(image => {
             const imgElement = document.createElement("img");
-            imgElement.src = `images/${image}`;
+            imgElement.src = `${image}`; // Adjusted to load images from root directory
             imgElement.alt = image;
             imgElement.onclick = () => openLightbox(imgElement.src);
             galleryDiv.appendChild(imgElement);
